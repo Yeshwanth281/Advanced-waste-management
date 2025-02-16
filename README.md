@@ -27,7 +27,7 @@
 ### 1️⃣ Clone the Repository  
 ```bash
 git clone https://github.com/Yeshwanth281/Advanced-waste-management.git
-cd advanced-waste-management
+cd Advanced-waste-management
 ```
 
 ### 2️⃣ Backend Setup
