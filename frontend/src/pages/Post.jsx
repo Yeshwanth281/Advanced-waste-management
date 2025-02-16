@@ -74,13 +74,13 @@ const Post = () => {
 
       if (isEdit) {
         await axios.put(
-          `https://waste-management-0kpq.onrender.com/waste/update/${editWasteId}`,
+          `https://advanced-waste-management.onrender.com/waste/update/${editWasteId}`,
           data
         );
         alert("Waste updated successfully!");
       } else {
         await axios.post(
-          "https://waste-management-0kpq.onrender.com/waste/add",
+          "https://advanced-waste-management.onrender.com/waste/add",
           data
         );
         alert("Waste added successfully!");
@@ -109,7 +109,7 @@ const Post = () => {
     try {
       setSpinner(true); // Show spinner while fetching data
       const { data } = await axios.get(
-        `https://waste-management-0kpq.onrender.com/user/${userId}`
+        `https://advanced-waste-management.onrender.com/user/${userId}`
       );
       setWastes(data?.user?.wastes || []);
     } catch (error) {
@@ -122,7 +122,7 @@ const Post = () => {
   const handleDel = async (wasteId) => {
     try {
       await axios.delete(
-        `https://waste-management-0kpq.onrender.com/waste/delete/${wasteId}`
+        `https://advanced-waste-management.onrender.com/waste/delete/${wasteId}`
       );
       getUser();
     } catch (error) {

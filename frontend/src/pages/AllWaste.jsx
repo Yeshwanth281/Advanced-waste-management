@@ -16,7 +16,7 @@ const AllWaste = () => {
   const fetchAllWaste = async () => {
     try {
       const { data } = await axios.get(
-        "https://waste-management-0kpq.onrender.com/waste/all"
+        "https://advanced-waste-management.onrender.com/waste/all"
       );
       console.log(data);
       setWastes(data.wastes); // Assume data is an array of waste objects
