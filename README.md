@@ -50,3 +50,4 @@ npm start
 1️⃣ **Biodegradable** (e.g., food waste, paper)  
 2️⃣ **Non-Biodegradable but Recyclable** (e.g., glass, metal cans)  
 3️⃣ **Non-Biodegradable and Non-Recyclable** (e.g., plastic bags, styrofoam)  
+

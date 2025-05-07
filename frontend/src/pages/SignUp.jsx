@@ -24,7 +24,7 @@ const SignUp = () => {
 
     try {
       const response = await axios.post(
-        "https://waste-management-0kpq.onrender.com/user/register",
+        "https://advanced-waste-management.onrender.com/user/register",
         userDetails,
         {
           headers: {
@@ -41,59 +41,59 @@ const SignUp = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row justify-center items-center h-screen w-full px-4 lg:px-0 bg-gradient-to-br from-[#0A192F] to-[#112240]">
+    <div className="flex flex-col lg:flex-row justify-center items-center h-screen w-full px-4 lg:px-0">
       {/* Background image (hidden on mobile) */}
       <img
-        className="hidden lg:block w-full lg:w-[45vw] mb-6 lg:mb-0 opacity-50"
+        className="hidden lg:block w-full lg:w-[45vw] mb-6 lg:mb-0"
         src={bg}
         alt="Background"
       />
 
       {/* Sign Up Form Box */}
-      <div className="bg-[#1A2A4F] shadow-2xl w-full max-w-[500px] rounded-[15px] flex flex-col justify-center items-center p-6 lg:p-8 border border-[#2C3E50]">
-        <h2 className="text-2xl lg:text-3xl font-semibold text-[#64FFDA] mb-6 lg:mb-8">
+      <div className="bg-slate-100 shadow-xl w-full max-w-[500px] rounded-[15px] flex flex-col justify-center items-center p-6 lg:p-8">
+        <h2 className="text-2xl lg:text-3xl font-semibold text-gray-700 mb-6 lg:mb-8">
           Sign Up
         </h2>
 
         <form onSubmit={handleSignUp} className="w-full flex flex-col">
           {/* Name Input */}
           <div className="mb-4 lg:mb-6">
-            <label className="block text-sm font-medium text-[#CCD6F6] mb-2">
+            <label className="block text-sm font-medium text-gray-600 mb-2">
               Name
             </label>
             <input
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full p-3 border border-[#2C3E50] rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#64FFDA] focus:border-transparent bg-[#1A2A4F] text-[#CCD6F6] placeholder-[#8892B0]"
+              className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               placeholder="Enter your name"
             />
           </div>
 
           {/* Email Input */}
           <div className="mb-4 lg:mb-6">
-            <label className="block text-sm font-medium text-[#CCD6F6] mb-2">
+            <label className="block text-sm font-medium text-gray-600 mb-2">
               Email
             </label>
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full p-3 border border-[#2C3E50] rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#64FFDA] focus:border-transparent bg-[#1A2A4F] text-[#CCD6F6] placeholder-[#8892B0]"
+              className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               placeholder="Enter your email"
             />
           </div>
 
           {/* Password Input */}
           <div className="mb-4 lg:mb-6">
-            <label className="block text-sm font-medium text-[#CCD6F6] mb-2">
+            <label className="block text-sm font-medium text-gray-600 mb-2">
               Password
             </label>
             <input
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full p-3 border border-[#2C3E50] rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#64FFDA] focus:border-transparent bg-[#1A2A4F] text-[#CCD6F6] placeholder-[#8892B0]"
+              className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               placeholder="Enter your password"
             />
           </div>
@@ -101,7 +101,7 @@ const SignUp = () => {
           {/* Sign Up Button */}
           <button
             type="submit"
-            className="w-full lg:w-[200px] bg-[#64FFDA] text-[#0A192F] py-3 rounded-lg hover:bg-[#52D1C2] transition duration-300 mb-4 self-center font-semibold"
+            className="w-full lg:w-[200px] bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition duration-300 mb-4 self-center"
           >
             {loading ? (
               <ImSpinner8
@@ -109,14 +109,14 @@ const SignUp = () => {
                 className="place-self-center animate-spin"
               />
             ) : (
-              "Sign Up"
+              "SignUp"
             )}
           </button>
 
           {/* Sign Up Text */}
-          <p className="text-center text-[#CCD6F6] text-sm lg:text-lg">
+          <p className="text-center text-gray-600 text-sm lg:text-lg">
             Already have an account?{" "}
-            <Link to="/" className="text-[#64FFDA] hover:underline">
+            <Link to="/" className="text-blue-500 hover:underline">
               Login
             </Link>
           </p>

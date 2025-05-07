@@ -5,14 +5,6 @@ const WasteSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  longitude: {
-    type: String,
-    required: true,
-  },
-  latitude: {
-    type: String,
-    required: true,
-  },
   location: {
     type: String,
     required: true,
@@ -28,27 +20,13 @@ const WasteSchema = new mongoose.Schema({
   description: {
     type: String,
   },
-  userID: {
+  user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
-  },
-  status: {
-    type: String,
   },
   createdAt: {
     type: Date,
     default: Date.now,
-  },
-  category: {
-    type: String,
-    enum: ['report', 'sell'],
-    required: true,
-  },
-  price: {
-    type: Number,
-    required: function () {
-      return this.category === 'sell';
-    },
   },
 });
 
