@@ -1,6 +1,6 @@
 # ♻️ Advanced Waste Management System  
 
-🔗 **[Visit the Website](https://advanced-waste-management-cux5-yeshwanth-d-rs-projects.vercel.app/)**  
+🔗 **[Visit the Website](waste-management-sand.vercel.app/)**  
 
 🚀 A smart waste management platform that enables users to **upload waste images**, determine **waste pricing**, and use **AI-powered waste classification and prediction models**. This system assists **municipalities, recycling programs, and environmental initiatives** in efficient waste management.  
 
